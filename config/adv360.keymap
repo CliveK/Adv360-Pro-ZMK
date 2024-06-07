@@ -68,41 +68,41 @@
 
         layer_keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                                               &mo 6      &none  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 2                                                                               &tog 3     &none  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &tog 5    &tap_dance_esc_layer_behavior  &kp LALT        &kp LGUI         &kp RCTRL  &none      &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                               &mo 5      &none  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 2                                                                               &tog 4     &none  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &tog 3    &tap_dance_esc_layer_behavior  &kp LALT        &kp LGUI         &kp RCTRL  &none      &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                            &lt 2 HOME      &kp PG_UP                              &none  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 1      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL                        &lt 5 END       &lt 3 PAGE_DOWN  &kp ENTER  &kp KP_N0         &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 1
+&to 0      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL                        &trans          &lt 3 PAGE_DOWN  &kp ENTER  &kp KP_N0         &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 1
             >;
         };
 
         layer_cursor {
             bindings = <
-&none   &none             &none                &none                    &none           &none      &tog 1                                                                               &trans     &none      &none           &none           &none          &none            &none
-&trans  &none             &kp LS(LG(Z))        &kp LG(Z)                &none           &kp LG(X)  &none                                                                                &tog 3     &kp RG(X)  &none           &kp RG(Z)       &kp RS(RG(Z))  &none            &none
-&trans  &kp LEFT_COMMAND  &kp LEFT_ALT         &kp LEFT_CONTROL         &kp LEFT_SHIFT  &kp LG(C)  &tog 5         &tap_dance_esc_layer_behavior  &to 1      &trans           &trans     &none      &kp RG(C)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &none
+&none   &none             &none                &none                    &none           &none      &tog 1                                                                               &mo 5      &none      &none           &none           &none          &none            &none
+&trans  &none             &kp LS(LG(Z))        &kp LG(Z)                &none           &kp LG(X)  &tog 2                                                                               &tog 4     &kp RG(X)  &none           &kp RG(Z)       &kp RS(RG(Z))  &none            &none
+&trans  &kp LEFT_COMMAND  &kp LEFT_ALT         &kp LEFT_CONTROL         &kp LEFT_SHIFT  &kp LG(C)  &tog 3         &tap_dance_esc_layer_behavior  &to 1      &trans           &trans     &none      &kp RG(C)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &none
 &trans  &kp LG(A)         &kp LG(RIGHT_ARROW)  &kp LS(LA(RIGHT_ARROW))  &none           &kp LG(V)                                                &none      &trans                                 &kp RG(V)  &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN  &kp END          &trans
-&trans  &none             &trans               &trans                   &trans                     &kp BACKSPACE  &kp DELETE                     &to 4      &lt 3 PAGE_DOWN  &kp ENTER  &kp SPACE             &kp RG(F)       &kp RS(RG(G))   &kp RG(G)      &none            &trans
+&to 0   &none             &trans               &trans                   &trans                     &kp BACKSPACE  &kp DELETE                     &to 4      &lt 3 PAGE_DOWN  &kp ENTER  &kp SPACE             &kp RG(F)       &kp RS(RG(G))   &kp RG(G)      &none            &trans
             >;
         };
 
         layer_Symbol {
             bindings = <
-&none            &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COMMA     &tog 1                                                                       &trans     &none          &none       &none              &none          &none              &none
-&kp EXCLAMATION  &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION  &tog 2                                                                       &none      &kp PERCENT    &none       &none              &none          &none              &none
-&kp HASH         &kp CARET       &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR        &kp ASTERISK  &tog 5         &tap_dance_esc_layer_behavior  &to 1       &trans  &trans     &none      &kp PERIOD     &kp RSHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_COMMAND  &trans
+&none            &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COMMA     &tog 1                                                                       &mo 5      &none          &none       &none              &none          &none              &none
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION  &tog 2                                                                       &tog 4     &kp PERCENT    &none       &none              &none          &none              &none
+&kp HASH         &kp CARET       &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR        &kp ASTERISK  &tog 3         &tap_dance_esc_layer_behavior  &to 1       &trans  &trans     &none      &kp PERIOD     &kp RSHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_COMMAND  &trans
 &kp AT_SIGN      &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp SLASH                                                   &to 2       &trans                        &kp BACKSLASH  &none       &none              &none          &none              &trans
-&kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &kp BACKSPACE  &kp DELETE                     &trans      &trans  &kp ENTER  &kp SPACE                 &trans      &trans             &none          &none              &trans
+&kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &kp BACKSPACE  &kp DELETE                     &trans      &trans  &kp ENTER  &kp SPACE                 &trans      &trans             &none          &none              &to 0
             >;
         };
 
         layer_fn {
             bindings = <
-&none   &none             &trans               &trans                   &trans          &trans  &tog 1                                                                                 &trans     &none   &none   &none   &none    &none  &none
-&trans  &none             &kp LS(LG(Z))        &kp LG(Z)                &none           &none   &tog 2                                                                                 &tog 3     &kp F7  &kp F8  &kp F9  &kp F10  &none  &none
-&trans  &kp LEFT_COMMAND  &kp LEFT_ALT         &kp LEFT_CONTROL         &kp LEFT_SHIFT  &none   &none          &tap_dance_esc_layer_behavior  &to 1        &trans           &trans     &none      &kp F4  &kp F5  &kp F6  &kp F11  &none  &none
+&none   &none             &trans               &trans                   &trans          &trans  &tog 1                                                                                 &mo 5      &none   &none   &none   &none    &none  &none
+&trans  &none             &kp LS(LG(Z))        &kp LG(Z)                &none           &none   &tog 2                                                                                 &tog 4     &kp F7  &kp F8  &kp F9  &kp F10  &none  &none
+&trans  &kp LEFT_COMMAND  &kp LEFT_ALT         &kp LEFT_CONTROL         &kp LEFT_SHIFT  &none   &tog 3         &tap_dance_esc_layer_behavior  &to 1        &trans           &trans     &none      &kp F4  &kp F5  &kp F6  &kp F11  &none  &none
 &trans  &kp LG(A)         &kp LG(RIGHT_ARROW)  &kp LS(LA(RIGHT_ARROW))  &none           &none                                                 &to 2        &trans                                 &kp F1  &kp F2  &kp F3  &kp F12  &none  &trans
-&trans  &none             &trans               &trans                   &trans                  &kp BACKSPACE  &kp DELETE                     &kp END      &lt 3 PAGE_DOWN  &kp ENTER  &kp SPACE          &trans  &trans  &none    &none  &trans
+&to 0   &none             &trans               &trans                   &trans                  &kp BACKSPACE  &kp DELETE                     &kp END      &lt 3 PAGE_DOWN  &kp ENTER  &kp SPACE          &trans  &trans  &none    &none  &trans
             >;
         };
 

@@ -77,11 +77,11 @@
 
         layer_cursor {
             bindings = <
-&none   &none             &none                &none                    &none           &none      &tog 1                                                                               &mo 5      &none      &none           &none           &none          &none            &none
-&trans  &none             &kp LS(LG(Z))        &kp LG(Z)                &none           &kp LG(X)  &tog 2                                                                               &tog 4     &kp RG(X)  &none           &kp RG(Z)       &kp RS(RG(Z))  &none            &none
-&trans  &kp LEFT_COMMAND  &kp LEFT_ALT         &kp LEFT_CONTROL         &kp LEFT_SHIFT  &kp LG(C)  &tog 3         &tap_dance_esc_layer_behavior  &to 1      &trans           &trans     &none      &kp RG(C)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &none
-&trans  &kp LG(A)         &kp LG(RIGHT_ARROW)  &kp LS(LA(RIGHT_ARROW))  &none           &kp LG(V)                                                &none      &trans                                 &kp RG(V)  &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN  &kp END          &trans
-&to 0   &none             &trans               &trans                   &trans                     &kp BACKSPACE  &kp DELETE                     &to 4      &lt 3 PAGE_DOWN  &kp ENTER  &kp SPACE             &kp RG(F)       &kp RS(RG(G))   &kp RG(G)      &none            &trans
+&none   &none             &none                &none                    &none           &none      &tog 1                                                                               &mo 5      &none      &none      &none          &none          &none    &none
+&trans  &none             &kp LS(LG(Z))        &kp LG(Z)                &none           &kp LG(X)  &tog 2                                                                               &tog 4     &kp RG(X)  &kp LG(C)  &kp RG(Z)      &kp RS(RG(Z))  &none    &none
+&trans  &kp LEFT_COMMAND  &kp LEFT_ALT         &kp LEFT_CONTROL         &kp LEFT_SHIFT  &kp LG(C)  &tog 3         &tap_dance_esc_layer_behavior  &to 1      &trans           &trans     &none      &kp LEFT   &kp DOWN   &kp UP         &kp RIGHT      &none    &none
+&trans  &kp LG(A)         &kp LG(RIGHT_ARROW)  &kp LS(LA(RIGHT_ARROW))  &none           &kp LG(V)                                                &none      &trans                                 &kp RG(V)  &kp HOME   &kp PAGE_UP    &kp PAGE_DOWN  &kp END  &trans
+&to 0   &none             &trans               &trans                   &trans                     &kp BACKSPACE  &kp DELETE                     &to 4      &lt 3 PAGE_DOWN  &kp ENTER  &kp SPACE             &kp RG(F)  &kp RS(RG(G))  &kp RG(G)      &none    &trans
             >;
         };
 
